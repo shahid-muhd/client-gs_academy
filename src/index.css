@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-menu {
+  @apply cursor-pointer;
+}
+
+.nav-menu:hover {
+  @apply transform scale-110 duration-700;
+}
