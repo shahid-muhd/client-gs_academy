@@ -6,7 +6,7 @@ function Home() {
       <section className="banner-section w-full ">
         <div className="relative  h-screen w-full">
           {/* Background Image with Dark Overlay */}
-          <div className="absolute bg-fixed inset-0 bg-[url('/images/banner-home.jpg')] bg-cover bg-top ">
+          <div className="absolute bg-fixed inset-0 bg-[url('/images/banner-home.avif')] bg-cover bg-top ">
             <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
             {/* Dark overlay */}
           </div>
