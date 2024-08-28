@@ -3,7 +3,7 @@ import React from "react";
 function Home() {
   return (
     <div>
-      <section className="banner-section w-full ">
+      <section className="banner-section">
         <div className="relative  h-screen w-full">
           {/* Background Image with Dark Overlay */}
           <div className="absolute bg-fixed inset-0 bg-[url('/images/banner-home.avif')] bg-cover bg-top ">
@@ -23,27 +23,86 @@ function Home() {
         </div>
       </section>
 
-      <section className="who-we-are w-full flex h-96 z-50 ">
+      <section className="who-we-are  flex h-[80vh] z-50 ">
         <div className="h-full w-5/12  float-left text-center flex items-center justify-center ">
-          <h1 className="text-5xl font-bold leading-relaxed ">Who We Are</h1>
+          <h2 className="text-5xl font-bold leading-relaxed ">Who We Are</h2>
         </div>
 
         <div className="h-full md:w-7/12 px-16 text-lg text-justify flex items-center justify-center ">
           {" "}
           <p>
-            At GS Academy, we are committed to revolutionizing education through
-            the integration of technology and personalized learning. Our mission
-            is to equip students with essential skills for professional and
-            academic success. We offer a range of specialized programs include
-            AceTrack for skill enhancement, ResearchMate for research and
-            project support, and TechWorkStation offering hands-on workshops in
-            MATLAB, Embedded Systems, and VLSI. NextGenTech provides
-            cutting-edge training in Data Science, Machine Learning, and
-            AI.Through AI-driven assessments, provide personalized insights,
-            helping students focus on their strengths and address areas for
-            improvement. At GS Academy, we blend innovation with expertise to
-            guide students towards a successful and bright future.
+            At GS Academy, we revolutionize education by integrating technology
+            and personalized learning to equip students with essential skills
+            for academic and professional success. Our specialized programs
+            AceTrack for skill enhancement, ResearchMate for project support,
+            TechWorkStation for hands-on workshops, and NextGenTech for
+            cutting-edge training in Data Science, Machine Learning, and AI—are
+            designed to empower students. Through AI-driven assessments, we
+            provide personalized insights to help students leverage their
+            strengths and address areas for improvement, guiding them towards a
+            successful future.
           </p>
+        </div>
+      </section>
+
+      <section className="relative">
+        <div className="w-full sticky top-0  h-[85vh] bg-gradient-to-r  from-sky-500 via-30% to-emerald-500 to-90% text-white  py-16">
+          <div className="w-full   ">
+            <div className="w-full flex justify-center">
+              <h2 className="text-4xl font-bold leading-relaxed">
+                Why Choose GS Academy?
+              </h2>
+            </div>
+            <div className="w-full flex justify-center mt-10">
+              <h3 className="text-lg font-medium leading-relaxed">
+                Our dedication to excellence empowers students to achieve their
+                academic and professional aspirations.
+              </h3>
+            </div>
+
+            <div className="flex justify-evenly mt-20  ">
+              <div className="why-us-card-wrapper">
+                {" "}
+                <div className="why-us-img-card ">
+                  <img src="/images/why-us-innovation.png" alt="" />
+                </div>
+                <div className="why-us-card-txt ">
+                  <p>Innovation</p>
+                </div>
+              </div>
+              <div className="why-us-card-wrapper">
+                {" "}
+                <div className="why-us-img-card ">
+                  <img src="/images/why-us-quality.png" alt="" />
+                </div>
+                <div className="why-us-card-txt ">
+                  <p>Quality</p>
+                </div>
+              </div>
+              <div className="why-us-card-wrapper">
+                {" "}
+                <div className="why-us-img-card ">
+                  <img src="/images/why-us-service.png" alt="" />
+                </div>
+                <div className="why-us-card-txt ">
+                  <p>Assistance</p>
+                </div>
+              </div>
+              <div className="why-us-card-wrapper">
+                {" "}
+                <div className="why-us-img-card ">
+                  <img
+                    className=""
+                    src="/images/why-us-versatility.png"
+                    alt=""
+                  />
+                </div>
+                <div className="why-us-card-txt ">
+                  <p>Versatility</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

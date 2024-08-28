@@ -2,10 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+  transition: scroll-behavior var(--scroll-speed, 1000ms);
+}
+
 .nav-menu {
   @apply cursor-pointer;
+}
+section {
+  @apply w-full;
 }
 
 .nav-menu:hover {
   @apply transform scale-110 duration-700;
+}
+
+.why-us-card-wrapper{
+  @apply  w-36
+}
+.why-us-img-card {
+  @apply border rounded-md w-36 h-36 p-2
+}
+.why-us-card-txt
+{
+  @apply w-full text-center py-3 font-semibold uppercase
 }

@@ -1,0 +1,5 @@
+html {
+    scroll-behavior: smooth;
+    transition: scroll-behavior var(--scroll-speed, 1000ms);
+  }
+  
