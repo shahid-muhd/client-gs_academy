@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 html {
   scroll-behavior: smooth;
   transition: scroll-behavior var(--scroll-speed, 1000ms);
@@ -19,7 +27,7 @@ section {
 }
 
 .why-us-card-wrapper{
-  @apply  w-36
+  @apply  w-36 m-auto
 }
 .why-us-img-card {
   @apply border rounded-md w-36 h-36 p-2

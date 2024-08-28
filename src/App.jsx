@@ -21,7 +21,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
-      <div className=" w-full scroll-smooth">
+      <div className="  w-screen  scroll-smooth">
         <NavBar />
 
         <div className="container ">

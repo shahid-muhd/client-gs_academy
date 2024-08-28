@@ -2,8 +2,8 @@ import React from "react";
 
 function Home() {
   return (
-    <div>
-      <section className="banner-section">
+    <div className="w-screen">
+      <section className=" w-full banner-section">
         <div className="relative  h-screen w-full">
           {/* Background Image with Dark Overlay */}
           <div className="absolute bg-fixed inset-0 bg-[url('/images/banner-home.avif')] bg-cover bg-top ">
@@ -23,12 +23,14 @@ function Home() {
         </div>
       </section>
 
-      <section className="who-we-are  flex h-[80vh] z-50 ">
+      <section className="who-we-are  md:flex h-[80vh] z-50 ">
         <div className="h-full w-5/12  float-left text-center flex items-center justify-center ">
-          <h2 className="text-5xl font-bold leading-relaxed ">Who We Are</h2>
+          <h2 className="text-5xl font-bold tracking-wide overflow-hidden">
+            Who We Are
+          </h2>
         </div>
 
-        <div className="h-full md:w-7/12 px-16 text-lg text-justify flex items-center justify-center ">
+        <div className="h-full md:w-7/12 px-16 leading-loose text-lg text-justify flex items-center justify-center ">
           {" "}
           <p>
             At GS Academy, we revolutionize education by integrating technology
@@ -46,7 +48,7 @@ function Home() {
       </section>
 
       <section className="relative">
-        <div className="w-full sticky top-0  h-[85vh] bg-gradient-to-r  from-sky-500 via-30% to-emerald-500 to-90% text-white  py-16">
+        <div className="w-full sticky top-0 h-fit md:h-[85vh] bg-gradient-to-r  from-sky-500 via-30% to-emerald-500 to-90% text-white  py-16">
           <div className="w-full   ">
             <div className="w-full flex justify-center">
               <h2 className="text-4xl font-bold leading-relaxed">
@@ -60,7 +62,7 @@ function Home() {
               </h3>
             </div>
 
-            <div className="flex justify-evenly mt-20  ">
+            <div className=" m-auto w-1/2  md:w-full md:flex justify-evenly mt-20  ">
               <div className="why-us-card-wrapper">
                 {" "}
                 <div className="why-us-img-card ">
