@@ -23,7 +23,7 @@ function NavBar() {
 
   return (
     <div
-      className={`w-screen h-16 px-4 md:px-12 text-xl flex justify-between items-center text-white fixed ${background} z-50 transition-colors duration-300`}
+      className={`w-screen h-16 px-4 md:px-12 text-xl flex justify-between items-center text-white fixed overflow-hidden ${background} z-50 transition-colors duration-300`}
     >
       {/* Logo */}
       <div className="nav-logo-wrapper">
