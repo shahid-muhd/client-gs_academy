@@ -23,7 +23,7 @@ function NavBar() {
 
   return (
     <div
-      className={`w-screen h-16 px-4 md:px-12 text-xl flex justify-between items-center text-white fixed overflow-hidden ${background} z-50 transition-colors duration-300`}
+      className={` w-screen h-16 px-4 md:px-12 text-xl flex justify-between items-center text-white fixed overflow-hidden ${background} z-50 transition-colors duration-300`}
     >
       {/* Logo */}
       <div className="nav-logo-wrapper">
@@ -55,7 +55,7 @@ function NavBar() {
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        }   w-10/12 p-10 md:p-0  rounded md:rounded-none md:flex md:w-auto md:items-center nav-menu-wrapper flex-col md:flex-row gap-4 md:gap-10 fixed  top-16 left-auto right-auto  md:left-auto bg-gray-900 md:bg-transparent md:static`}
+        }   w-10/12 p-10 md:px-5  rounded md:rounded-none md:flex md:w-auto md:items-center nav-menu-wrapper flex-col md:flex-row gap-4 md:gap-10 fixed  top-16 left-auto right-auto  md:left-auto bg-gray-900 md:bg-transparent md:static`}
       >
         <div className="nav-menu">
           <a href="/" className="block py-2 md:py-0 hover:text-blue-500">
