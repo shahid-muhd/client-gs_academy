@@ -9,7 +9,6 @@
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth;
   transition: scroll-behavior var(--scroll-speed, 1000ms);
@@ -26,13 +25,28 @@ section {
   @apply transform scale-110 duration-700;
 }
 
-.why-us-card-wrapper{
-  @apply  w-36 m-auto
+.why-us-card-wrapper {
+  @apply w-36 m-auto;
 }
 .why-us-img-card {
-  @apply border rounded-md w-36 h-36 p-2
+  @apply border rounded-md w-36 h-36 p-2;
 }
-.why-us-card-txt
-{
-  @apply w-full text-center py-3 font-semibold uppercase
+.why-us-card-txt {
+  @apply w-full text-center py-3 font-semibold uppercase;
 }
+
+.moral-card {
+  @apply p-5 h-96 border-2 space-y-1 border-emerald-500 w-96 rounded-xl hover:bg-gradient-to-r from-sky-500 via-30% to-emerald-500 to-90% hover:text-white;
+}
+.moral-img-wrapper {
+  @apply w-full flex justify-center h-28  ;
+}
+
+
+.moral-title {
+  @apply w-full text-center text-2xl font-bold overflow-y-hidden tracking-wider;
+}
+.moral-description-wrapper {
+  @apply w-full text-justify flex place-items-end text-lg h-44   overflow-y-hidden tracking-wide;
+}
+

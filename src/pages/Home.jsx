@@ -48,7 +48,7 @@ function Home() {
       </section>
 
       <section className="relative">
-        <div className="w-full sticky top-0 h-fit md:h-[85vh] bg-gradient-to-r  from-sky-500 via-30% to-emerald-500 to-90% text-white  py-16">
+        <div className="w-full sticky top-0 h-fit md:h-[85vh] bg-gradient-to-r from-sky-500 via-30% to-emerald-500 to-90% text-white  py-16">
           <div className="w-full   ">
             <div className="w-full flex justify-center">
               <h2 className="text-4xl font-bold leading-relaxed">
