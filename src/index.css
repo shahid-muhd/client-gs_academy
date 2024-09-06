@@ -26,17 +26,17 @@ section {
 }
 
 .why-us-card-wrapper {
-  @apply w-36 m-auto;
+  @apply w-44 m-auto ;
 }
 .why-us-img-card {
-  @apply border rounded-md w-36 h-36 p-2;
+  @apply border-2  rounded-md w-44 h-44 p-5 ;
 }
 .why-us-card-txt {
-  @apply w-full text-center py-3 font-semibold uppercase;
+  @apply w-full text-center text-2xl py-3 font-semibold uppercase;
 }
 
 .moral-card {
-  @apply p-5 h-96 border-2 space-y-1 border-emerald-500 w-96 rounded-xl hover:bg-gradient-to-r from-sky-500 via-30% to-emerald-500 to-90% hover:text-white;
+  @apply p-5 h-96 space-y-1 border-2  border-emerald-500 w-96 rounded-xl hover:bg-gradient-to-r from-sky-500 via-30% to-emerald-500 to-90% hover:text-white;
 }
 .moral-img-wrapper {
   @apply w-full flex justify-center h-28  ;

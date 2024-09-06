@@ -1,20 +1,24 @@
 import React, { useEffect, useState } from "react";
 
 function NavBar() {
-  const [background, setBackground] = useState("bg-transparent");
+  const [background, setBackground] = useState("bg-transparent text-white");
   const [isOpen, setIsOpen] = useState(false);
-
+  const whiteBackgroundSetting = "bg-white text-black";
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       if (scrollY > 200) {
-        setBackground("bg-gray-900");
+        setBackground(whiteBackgroundSetting);
       } else {
-        setBackground("bg-transparent");
+        setBackground("bg-transparent text-white");
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    if (window.location.pathname == "/contact") {
+      setBackground(whiteBackgroundSetting);
+    } else {
+      window.addEventListener("scroll", handleScroll);
+    }
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -23,7 +27,7 @@ function NavBar() {
 
   return (
     <div
-      className={` w-screen h-16 px-4 md:px-12 text-xl flex justify-between items-center text-white fixed overflow-hidden ${background} z-50 transition-colors duration-300`}
+      className={` w-screen h-16 px-4 md:px-12  text-xl flex justify-between items-center   fixed overflow-hidden ${background} z-50 transition-colors duration-300`}
     >
       {/* Logo */}
       <div className="nav-logo-wrapper">
@@ -78,7 +82,7 @@ function NavBar() {
           </a>
         </div>
         <div className="nav-menu">
-          <a href="#" className="block py-2 md:py-0 hover:text-blue-500">
+          <a href="/contact" className="block py-2 md:py-0 hover:text-blue-500">
             Contact Us
           </a>
         </div>

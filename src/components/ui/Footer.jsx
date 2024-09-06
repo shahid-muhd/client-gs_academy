@@ -5,7 +5,7 @@ function Footer() {
     <div>
 
 
-<footer class="h-[92vh]  bg-gray-900 p-16">
+<footer class="h-[92vh]   p-16 bg-[radial-gradient(125%_125%_at_50%_10%,#000_40%,#4ade80_100%)]">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
